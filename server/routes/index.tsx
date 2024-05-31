@@ -1,8 +1,7 @@
 import { ImageResponse } from '@vercel/og';
-// App router includes @vercel/og.
-// No need to install it.
 
-export async function GET() {
+export default eventHandler((event) => {
+  // return 'Start by editing <code>server/routes/index.ts</code>.';
   return new ImageResponse(
     (
       <div
@@ -26,4 +25,4 @@ export async function GET() {
       height: 630,
     },
   );
-}
+});
