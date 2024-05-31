@@ -1,8 +1,6 @@
 import { ImageResponse } from '@vercel/og';
-// App router includes @vercel/og.
-// No need to install it.
 
-export async function GET() {
+export default async function handler() {
   return new ImageResponse(
     (
       <div
